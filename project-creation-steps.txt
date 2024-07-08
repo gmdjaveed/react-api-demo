@@ -1,0 +1,64 @@
+Create React "User Posts" Application to demonstrate the usage of external Rest API CRUD operations: react-api-demo
+
+Requirements:
+- Install Visual Studio
+- Install vscode pluggins eslint and prettier
+- Change settings : File -> pref -> settings -> Format on Save
+- node.js version: v21.7.3
+- npm version: 10.5.0
+- Install axios (Part of below steps)
+
+
+1. create react-api-demo through create-react-app bootstrap command.
+    a) npx create-react-app react-api-demo
+    b) Update below versions in package.json:
+        "dependencies": {
+            "@testing-library/jest-dom": "^5.17.0",
+            "@testing-library/react": "^13.4.0",
+            "@testing-library/user-event": "^13.5.0",
+            "react": "^18.2.0",
+            "react-dom": "^18.2.0",
+            "react-router-dom": "^6.22.3",
+            "react-scripts": "5.0.1",
+            "web-vitals": "^2.1.4"
+        }
+    c)After updating the dependencies versions in package.json
+         - Delete package-lock.json and node_modules
+         - Open new terminal
+         - run to update package:
+            - npm install
+    d) Start the new application to check if everything looks Ok!        
+    - npm start
+    
+    e) Install axios to invoke Rest APIs.
+    - npm start    
+    
+3. Create the app with below features:  
+    1) List all the user postes
+    2) Edit the selected post
+    3) Delete the post
+    
+- References: 
+    - To test API with sample data: https://jsonplaceholder.typicode.com/
+    - Axios: https://axios-http.com/docs/intro : Axios is a promise-based HTTP Client for node.js and the browser. 
+    - Reference course : Develop React JS web applications including components, state, effect, hooks, React router, reducer, context, etc
+        - course/master-react/learn/lecture/43467284#overview   
+            
+
+=========================================================================================================
+Git Repository creation Steps:
+----------------------------------
+or create a new repository on the command line
+
+echo "# react-api-demo" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/gmdjaveed/react-api-demo.git
+git push -u origin main
+
+or push an existing repository from the command line
+git remote add origin https://github.com/gmdjaveed/react-api-demo.git
+git branch -M main
+git push -u origin main
